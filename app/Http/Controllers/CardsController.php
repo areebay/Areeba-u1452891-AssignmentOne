@@ -33,4 +33,14 @@ class CardsController extends Controller
 
       return view('cards.show',['card'=>$card]);
     }
+
+    public function delete(Card $card) {
+      foreach ($card->notes as $note) {
+        $note->delete();
+      }
+
+      $card->delete();
+
+      return back();
+    }
 }

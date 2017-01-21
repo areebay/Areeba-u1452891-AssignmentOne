@@ -28,7 +28,6 @@
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Update your reply</button>
-          <a href="/cards/3" class="pull-right btn btn-primary" >Go back</a>
         </div>
       </form>
 

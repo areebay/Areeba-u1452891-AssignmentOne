@@ -28,6 +28,7 @@
       @foreach ($cards as $card)
         <li class="list-group-item list-group-item-info">
           <a href="/cards/{{ $card->id }}">{{$card->title}}</a>
+          <a href="/cards/{{ $card->id }}/delete" class="pull-right">delete</a>
         </li>
       @endforeach
     </div>
@@ -48,7 +49,7 @@
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-primary">Post</button>
-      <a href="/" class="pull-right btn btn-primary" >Go back</a>
+            <a href="/" class="pull-right btn btn-primary" >Go back</a>
     </div>
   </form>
 

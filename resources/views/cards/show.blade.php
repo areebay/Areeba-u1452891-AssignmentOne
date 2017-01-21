@@ -35,6 +35,7 @@
 
       <br>
 
+
       <p><strong>Reply to this review:</strong></p>
       <form action="/cards/{{$card->id}}/notes" method="POST">
         {{ csrf_field() }}
