@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!--Set title and style for footer used for every page of this site-->
   <title>Mansfield Castle</title>
 
   <style>

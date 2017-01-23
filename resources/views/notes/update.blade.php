@@ -1,6 +1,9 @@
 @extends('layouts.cardlayout')
 <title>Mansfield Castle</title>
 @section('content')
+
+  <!--Add style-->
+
 <style>
 .titleOne {
   text-align: center;
@@ -12,10 +15,15 @@
   text-align: center;
 }
 </style>
-<div class="titleOne">Edit</div>
-<div class="titleTwo">Edit your Reply</div>
 
-<hr>
+<!--Get style from layouts and add relevant content-->
+<div class="titleOne">Edit</div>
+<div class="titleTwo">Edit and update your Reply</div>
+
+<!--Gap-->
+<br>
+
+<!--Set size and add update function including its revelant buttons-->
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -27,7 +35,9 @@
           <textarea name="body" class="form-control">{{ $note->body }}</textarea>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Update your reply</button>
+          <button type="submit" class="pull-right btn btn-primary">EDIT & UPDATE</button>
+          <a href="/" class="pull-left btn btn-primary" >EXIT</a>
+
         </div>
       </form>
 

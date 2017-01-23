@@ -4,15 +4,11 @@
 
 <html>
 <head>
-@include('layouts.master')
 <body>
+  <!--Add styles from layouts folder-->
+  @include('layouts.master')
 
-  <div class="sidebar-logo">
-    <a href="./">
-      <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
-    </a>
-  </div>
-
+  <!--Set size, style and add relevant content-->
   <div style="margin-left:25%; padding:1px 16px;">
     <div class="titleOne">Dining</div>
         <div class="titleTwo">Dining at Mansfield Castle is a memorable experience. The elegant dining room
@@ -31,11 +27,8 @@
 
 <br>
 
-    <div class="sidebar-logo">
-      <a href="./">
-        <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
-      </a>
-    </div>
+<!--Add image-->
+<img src="http://www.celticcastles.com/castles/mansfield-castle/images/dining.jpg" alt="..." class="img-responsive">
 
 <br>
 
@@ -43,8 +36,9 @@
       View the current dinner menu, Mansifeld Castle has to offer. Do this by clicking on the relevant buttons below.
       </p>
 
-    <div style="text-align:center;font-size:19px;" ><strong>A La Carte Sample Evening Menu</strong></div>
 
+  <!--Set size, style, add relevant content and create list with square bullet points-->
+    <div style="text-align:center;font-size:19px;" ><strong>A La Carte Sample Evening Menu</strong></div>
     <button class="accordion">Starters</button>
     <div class="panel">
       <p>
@@ -81,6 +75,7 @@
       </p>
     </div>
 
+<!--Set actions to the buttons to display the dinner menu in a funky style-->
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;

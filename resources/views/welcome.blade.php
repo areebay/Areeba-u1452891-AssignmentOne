@@ -4,25 +4,22 @@
 
 <html>
 <head>
-  <style>
-
-
-
-  </style>
-
   <body>
+
+<!--Add styles from layouts folder-->
 @include('layouts.master')
 
-  <div class="sidebar-logo">
-    <a href="./">
-      <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
-    </a>
-  </div>
 
+
+<!--Set size and add relevant content-->
   <div style="margin-left:25%; padding:1px 16px; height:900px;">
     <div class="titleOne">Welcome to Mansfield Castle</div>
     <div class="titleTwo">Mansifeld Castle is an imposing Victorian building set in 3.5 acres of picturesque
     countryside, with award winning cuisine and magnificent oak panelling throughout.</div>
+
+    <!--Add image-->
+<img src="http://media.celticcastles.com/Site/Images/Blog/wp-images/2012/11/Mansfield-Castle-Exterior.jpg" alt="..." class="img-responsive">
+
 
 <br>
 
@@ -41,7 +38,7 @@
 
       <p><strong>Free upgrades to Celtic Castles customers (where available)</strong></p>
 
-
+<!--Include style and add relevent content-->
 
   <div class="box-set">
     <figure class="boxWelcome">
@@ -71,6 +68,7 @@
 
 <br>
 
+<!--Add footer from layouts folder-->
   @include('layouts.footer')
 
 </div>

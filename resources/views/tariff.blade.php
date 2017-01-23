@@ -4,17 +4,19 @@
 
 <html>
 <head>
-
-@include('layouts.master')
-
 <body>
 
+  <!--Add styles from layouts folder-->
+@include('layouts.master')
+
+  <!--Add image-->
 <div class="sidebar-logo">
   <a href="./">
     <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
   </a>
 </div>
 
+<!--Set size and add relevant content-->
   <div style="margin-left:25%; padding:1px 16px;">
     <div class="titleOne">2017 Tariff</div>
 
@@ -57,7 +59,7 @@
     </p>
 
 <br>
-
+<!--Add button and link it to the correct page-->
   <a class="button" href="index">View feedback from people who have stayed at the castle
     in the past >></a>
   </div>

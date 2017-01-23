@@ -5,15 +5,18 @@
 <html>
 <head>
 
+<body>
+  <!--Add image-->
 @include('layouts.master')
 
-<body>
+  <!--Add image-->
   <div class="sidebar-logo">
     <a href="./">
       <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
     </a>
   </div>
 
+  <!--Set size and add relevant content-->
   <div style="margin-left:25%; padding:1px 16px; height:1000px;">
 
   <div class="titleOne">Location</div>
@@ -28,6 +31,7 @@
     If you are driving, click on the button below for detailed directions to Tain from Inverness.
   </p>
 
+  <!--Get styles from layout page and add it to the relevant content-->
   <div class="boxLocation">
     <a class="button" href="#popup">Directons by car</a>
   </div>
@@ -69,6 +73,8 @@
     For full timetable information on flights to and from the Highlands, Orkney, Shetlans and the Western Isles,
     visit the Highlands & Islands Airports Lts web-site www.hial.co.uk.
   </p>
+
+  <!--Create link-->
 
   <ol type="disc">
     <li>Birmingham- Inverness, Eastern Airways, tel: 01652 680600
@@ -123,6 +129,7 @@
 
 <br>
 
+<!--Add footer from layouts folder-->
 @include('layouts.footer')
 
 </div>

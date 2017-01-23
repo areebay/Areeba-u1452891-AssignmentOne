@@ -24,24 +24,24 @@ Route::get('dining', function () {
 });
 
 Route::get('tariff', function () {
-    return view('tariff');
+    return view('tariff');  // will return tariff.blade.php
 });
 
 Route::get('location', function () {
-    return view('location');
+    return view('location');  // will return location.blade.php
 });
 
 
-Route::get('index', 'CardsController@index');
-
+Route::get('index', 'CardsController@index');  // will return index.blade.php
+// will create feedback
 Route::post('cards', 'CardsController@create');
 
-Route::get('cards/{card}', 'CardsController@show');
+Route::get('cards/{card}', 'CardsController@show');  // will  read/show feedback
 
 Route::post('cards/{card}/notes', 'NotesController@store');
-
+// will store feedback/comment
 Route::get('cards/{card}/delete', 'CardsController@delete');
-
+// will delete feedback
 Route::get('notes/{note}/edit', 'NotesController@edit');
-
+// will edit feedback
 Route::patch('notes/{note}', 'NotesController@update');

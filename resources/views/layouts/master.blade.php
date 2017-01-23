@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+  <!--Set style for title, text etc used for every page of this site-->
   <style>
   body {
     margin:0;
@@ -78,7 +79,7 @@
     text-decoration: none;
   }
 
-{{-- dining.blade.php --}}
+{{--style for dining.blade.php--}}
 
 button.accordion {
   background-color: #d9edf7;
@@ -113,7 +114,7 @@ div.panel.show {
   display: block;
 }
 
-{{-- location.blade.php --}}
+{{--location.blade.php--}}
 
 .boxLocation {
   width: 40%;
@@ -188,7 +189,7 @@ div.panel.show {
   }
 }
 
-{{-- tariff.blade.php --}}
+{{--style for tariff.blade.php--}}
 
 table a:link {
   color: #666;
@@ -301,8 +302,7 @@ table tr:hover td {
   background: -moz-linear-gradeint(top, #f2f2f2, #f0f0f0);
 }
 
-{{-- welcome.blade.php --}}
-
+{{--style for welcome page--}}
 .box-set {
   background: #d9edf7;
   overflow: auto;
@@ -356,7 +356,7 @@ font-weight: bold;
   </style>
 </head>
 
-{{-- navigation --}}
+<!--navigation-->
 <body>
   <ul>
   <li>
