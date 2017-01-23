@@ -9,13 +9,6 @@
   <!--Add image-->
 @include('layouts.master')
 
-  <!--Add image-->
-  <div class="sidebar-logo">
-    <a href="./">
-      <img src="{{asset('resources/images/sidebar-logo.jpeg')}}"/>
-    </a>
-  </div>
-
   <!--Set size and add relevant content-->
   <div style="margin-left:25%; padding:1px 16px; height:1000px;">
 
